@@ -1,0 +1,255 @@
+:root {
+
+    --light-green : #B1FC82;
+    --gray : #A7BC9A;
+    --green : #7BAF5A;
+    --whitegreen : #DFFCCD;
+    --darkgreen : #577C40;
+    
+}
+
+/*FONT FAMILY
+.open-sans-semibold {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 650;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}*/
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+}
+
+.open-sans-bold {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+.open-sans-semibold {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 650;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.outer-container{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 90px 400px 1fr 70px;
+    grid-template-areas:
+                         "navbar"
+                         "header"
+                         "main-content"
+                         "footer" ;
+}
+
+.navbar{
+
+    grid-area: navbar;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* NAVBAR */
+.nav-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list li{
+    list-style-type: none;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid aqua;
+}
+
+#home{
+    background-color: var(--green);
+    border-radius: 10px;
+}
+
+/* MAIN CONTENT */
+.main-content{
+    grid-area: main-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.forms{
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+}
+
+.forms input{
+    padding: 20px;
+    letter-spacing: 2px;
+    border: 1px solid var(--gray);
+}
+
+#find-now{
+    background-color: var(--darkgreen);
+    color: white;
+}
+
+#find-now:hover{
+    background-color: var(--whitegreen);
+    color: black;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+
+.bullet:hover{
+    background-color: var(--gray) !important;
+    border-radius: 5px !important;
+    color: white !important;
+    text-decoration: underline !important;
+    font-size: 17px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.title-container{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.prod-title{
+    margin-top: 10px;
+    font-size: 45px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.prod-desc{
+    color: var(--gray);
+    font-size: 18px;
+    text-align: justify;
+}
+
+.image-container{
+    height: 350px;
+    width: 950px;
+    margin-bottom: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--light-green);
+    border-radius: 5px;
+}
+
+.image-food{
+    height: 340px;
+    margin-right: 10px;
+}
+
+/* CONTAINERS */
+.container-1{
+    align-self: flex-start !important;
+}
+
+.container-2{
+    align-self: flex-end !important;
+}
+
+.towards-container{
+  border-top: 1px solid aqua !important;
+  border-bottom: 0px !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+  border-radius: 0px !important;
+  width: 100% !important;
+  padding-top: 100px;
+}
+
+.towards-title{
+    align-self: flex-start;
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: rgb(128, 243, 172);
+}
+
+.img-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.food-img{
+    height: 300px;
+    width: 350px;
+}
+
+.img-container{
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#volunteer-img{
+    height: 300px;
+    width: 450px    ;
+}
+
+.goexplore-header-title{
+    margin-top: 20px;
+    color: var(--darkgreen);
+    letter-spacing: 2px;
+}
+
+#bahandi-logo{
+    height: 50px;
+    width: 50px;
+}
+
+
+/*FOOTER STYLES */
+.footer{
+    background-color: var(--darkgreen);
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
