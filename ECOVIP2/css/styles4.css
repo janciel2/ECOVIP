@@ -269,6 +269,49 @@ a{
 #about-us{
     font-size: 60px;
 }
+
+.slide-img{
+    height: 200px;
+    width: 200px;
+}
+
+.image-slides{
+    margin-top: 25px;
+    display: flex;
+    margin-right: 20px;
+}
+
+.flex-column{
+    flex-direction: column !important;
+}
+
+.list-tour{
+    margin-top: 50px;
+    align-self: center;
+    list-style-type: disc;
+}
+
+#avail-button{
+    margin-top: 50px;
+    padding: 15px;
+    width: 250px;
+    align-self: flex-end;
+    font-size: 18px;
+    border-radius: 10px;
+
+    background-color: transparent;
+    border: transparent;
+    color:gray;
+}
+
+#avail-button:hover{
+    background-color: var(--green);
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+
 /*FOOTER STYLES */
 .footer{
     background-color: var(--darkgreen);
