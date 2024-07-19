@@ -100,14 +100,17 @@
 .main-content{
     grid-area: main-content;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;    
+    margin: 0px 110px;
+    margin-bottom: 15px;
 }
 
 
 .forms{
     display: flex;
-    align-self: flex-start;
+    align-self: center;
     justify-content: center;
 }
 
@@ -180,6 +183,48 @@ a{
     margin-right: 10px;
 }
 
+.main-intro{
+    margin-top: 20px;
+    box-sizing: content-box;
+    padding: 10px;
+    display: flex;
+
+    border-bottom: 3px solid var(--light-green);
+}
+
+#map{
+    height: 500px;
+    width: 500px;
+    margin-right: 150px;
+}
+
+.sub-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-paragraph{
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.imageslides{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.column-flex{
+    flex-direction: column !important;
+}
+
+.image-size{
+    width: 300px;
+    height: 300px;
+}
 /* CONTAINERS */
 .container-1{
     align-self: flex-start !important;
