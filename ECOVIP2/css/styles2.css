@@ -242,6 +242,99 @@ a{
     width: 50px;
 }
 
+.items-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 850px;
+    padding: 15px;
+    flex-direction: column;
+}
+
+.item-list{
+    display: flex;
+    height: 200px;
+    width: 800px;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-size{
+    height: 200px;
+    width: 300px !important;
+    margin-right: 50px;
+    border-radius: 10px;
+}
+
+.food-desc{
+    width: 100%;
+    margin-top: 50px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px
+}
+
+.price-input{
+    padding:5px;
+    width: 50%;
+    margin-bottom: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+}
+
+.price-tag{
+    margin-bottom: 15px;
+}
+
+.add-to-cart{
+    width: 20%;
+    padding: 10px;
+    border: 1px solid transparent;
+    background-color: var(--darkgreen);
+    color: var(--whitegreen);
+    border-radius: 10px;
+
+}
+
+.add-to-cart:hover{
+        background-color: var(--light-green);
+        color: black;
+        font-size: 15px;    
+        font-weight: 700;  
+        text-decoration: underline  ;
+
+}
+
+.total-cost{
+    margin-top: 10px;
+    align-self: flex-end;
+    margin-right: 170px;
+}
+
+#total-cost-input{
+    padding: 5px;
+     border-radius: 5px;
+     margin-bottom: 5px;
+}
+
+.buy-now{
+    width: 40%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--whitegreen);
+    color: whitesmoke;
+    background-color: var(--darkgreen);
+}
+
+.buy-now:hover{
+    font-weight: 800;
+    border: none;
+    background-color: var(--whitegreen);
+    color: black;
+}
+
 /*FOOTER STYLES */
 .footer{
     background-color: var(--darkgreen);
